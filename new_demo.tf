@@ -1,6 +1,3 @@
-provider "aws" {
-    region = var.aws_region
-}
 
 # Create VPC
 resource "aws_vpc" "my_vpc" {

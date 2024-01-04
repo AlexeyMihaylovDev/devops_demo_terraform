@@ -18,7 +18,7 @@ resource "aws_subnet" "private-subnet-1" {
   vpc_id                  = aws_vpc.my_vpc_devops.id
   cidr_block              = "11.0.2.0/24"
   map_public_ip_on_launch = false
-    availability_zone = "ca-central-1a"
+  availability_zone = "ca-central-1a"
 
   tags = {
     Name = "private-subnet-devops_demo_tf"

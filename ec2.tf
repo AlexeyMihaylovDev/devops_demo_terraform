@@ -1,5 +1,5 @@
 resource "aws_instance"  "ubuntu_instance" {
-  ami           = "ami-0a2e7efb4257c0907"
+  ami           = var.ami
   instance_type = "t3.micro"
   subnet_id     = aws_subnet.public-subnet-1a.id
   key_name      = aws_key_pair.linux_keypair.key_name
